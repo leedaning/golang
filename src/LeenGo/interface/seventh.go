@@ -9,7 +9,7 @@ type intf1 interface {
 }
 
 type intf2 interface {
-	intf1
+	intf1 // 嵌入interface
 	sing()
 }
 

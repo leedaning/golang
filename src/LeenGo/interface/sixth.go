@@ -10,7 +10,7 @@ type Human struct {
 	age  int
 }
 
-type Element interface{}
+type Element interface{} // 空interface可以接收任何类型的值
 type List []Element
 
 func (h Human) String() string {
@@ -19,10 +19,10 @@ func (h Human) String() string {
 
 func main() {
 	list := make(List, 4)
-	list[0] = "leen"
-	list[1] = 18
-	list[2] = [2]string{"leen", "male"}
-	list[3] = Human{"leedaning", 30}
+	list[0] = "leen"                    // string, 空interface可以接收任何类型的值
+	list[1] = 18                        // int, 空interface可以接收任何类型的值
+	list[2] = [2]string{"leen", "male"} // 数组, 空interface可以接收任何类型的值
+	list[3] = Human{"leedaning", 30}    // Human, 空interface可以接收任何类型的值
 
 	// getType(list)
 	getType2(list)
