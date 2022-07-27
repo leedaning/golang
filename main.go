@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"gostudy.com/day4"
 	"math/rand"
 	"time"
-	//"second"
-	"gostudy.com/day2"
 )
 
 func main() {
@@ -19,9 +18,19 @@ func main() {
 	//mySlice()
 	//mySlice2()
 	//mySlice3()
-	day2.MyMap()
-	day2.MySlice()
-
+	//day2.MyMap()
+	//day2.MySlice()
+	//day2.MyString()
+	//day2.MyFunc()
+	//day3.MyPoint()
+	//day3.MyDefer()
+	//day3.MyVarType()
+	//day3.MyFuncType()
+	//day3.MyAnonymity()
+	//day3.MyCallBack()
+	//day3.MyClosure()
+	//day3.FuncVar()
+	day4.MyStruct()
 }
 
 func mySlice3() {
