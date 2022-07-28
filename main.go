@@ -30,7 +30,11 @@ func main() {
 	//day3.MyCallBack()
 	//day3.MyClosure()
 	//day3.FuncVar()
-	day4.MyStruct()
+	//day4.MyStruct()
+	//day4.OOP()
+	day4.OOP2()
+	//day4.Method()
+	//day4.GetTree()
 }
 
 func mySlice3() {

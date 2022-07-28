@@ -22,7 +22,7 @@ func MyStruct() {
 	//perFuc()
 	studentFuc()
 
-	strct := struct {
+	/*strct := struct {
 		name string
 		sex  string
 		age  int
@@ -31,19 +31,33 @@ func MyStruct() {
 		"male",
 		22,
 	}
-	fmt.Println("匿名结构体为：", strct)
+	fmt.Println("匿名结构体为：", strct)*/
 
 }
 
 //学生函数
 func studentFuc() {
 	var std student
-	std.Person.name = "Leen"
+	//var per person
+	per := person{
+		name: "Leen",
+		sex:  "male",
+		age:  22,
+	}
+	/*std.Person.name = "Leen"
 	std.Person.sex = "male"
-	std.Person.age = 22
+	std.Person.age = 22*/
+	std.Person = per
 	std.string = "二班"
 	std.Student_NO = 1
+	fmt.Println("人物信息：", per)
 	fmt.Println("学生信息：", std)
+	fmt.Println("学生信息中人物信息：", std.Person)
+	//per.age = 23
+	std.Person.age = 24
+	fmt.Println("人物信息：", per)
+	fmt.Println("学生信息：", std)
+	fmt.Println("学生信息中人物信息：", std.Person)
 }
 
 //人物函数
