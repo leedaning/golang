@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gostudy.com/day4"
+	"gostudy.com/day7"
 	"math/rand"
 	"time"
 )
@@ -32,9 +32,16 @@ func main() {
 	//day3.FuncVar()
 	//day4.MyStruct()
 	//day4.OOP()
-	day4.OOP2()
+	//day4.OOP2()
 	//day4.Method()
 	//day4.GetTree()
+	//day5.MyInterface()
+	//day5.MyItfe()
+	//day5.MyNull()
+	//day5.MyAssert()
+	//day6.MyType()
+	//day7.MyError()
+	day7.MyErrorType()
 }
 
 func mySlice3() {
