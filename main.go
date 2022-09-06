@@ -2,10 +2,14 @@ package main
 
 import (
 	"fmt"
-	"gostudy.com/day7"
+	"gostudy.com/inits"
 	"math/rand"
 	"time"
 )
+
+func init() {
+	fmt.Println("This is main init function. one")
+}
 
 func main() {
 	fmt.Println("Hello Leen")
@@ -41,9 +45,16 @@ func main() {
 	//day5.MyAssert()
 	//day6.MyType()
 	//day7.MyError()
-	day7.MyErrorType()
+	//day7.MyErrorType()
+	//day7.MyCustomize()
+	//day8.MyPanic()
+	//day8.MyError()
+	//_package.Introduction()
+	inits.Start()
 }
-
+func init() {
+	fmt.Println("This is main init function. two")
+}
 func mySlice3() {
 	var num int = 100
 	fmt.Printf("num = %d, add = %p \n", num, &num)

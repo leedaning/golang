@@ -27,6 +27,10 @@ func MyErrorType() {
 			fmt.Println("ins=", ins)
 			fmt.Println("msg:", ins.msg)
 			fmt.Println("time:", ins.time)
+			err := ins.LogicError(10, 9)
+			if err != nil {
+				fmt.Println(err.Error()) // 打印错误信息
+			}
 		}
 	}
 
