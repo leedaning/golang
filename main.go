@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
-	"gostudy.com/inits"
 	"math/rand"
 	"time"
+
+	"gostudy.com/my_db"
 )
 
 func init() {
@@ -50,8 +51,10 @@ func main() {
 	//day8.MyPanic()
 	//day8.MyError()
 	//_package.Introduction()
-	inits.Start()
+	//inits.Start()
+	my_db.Conn()
 }
+
 func init() {
 	fmt.Println("This is main init function. two")
 }
