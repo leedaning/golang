@@ -2,10 +2,9 @@ package main
 
 import (
 	"fmt"
+	"gostudy.com/intf"
 	"math/rand"
 	"time"
-
-	"gostudy.com/my_db"
 )
 
 func init() {
@@ -52,7 +51,10 @@ func main() {
 	//day8.MyError()
 	//_package.Introduction()
 	//inits.Start()
-	my_db.Conn()
+	//my_db.Conn()
+	//day8.Concurrency()
+	//times.MyTime()
+	intf.Learn()
 }
 
 func init() {
